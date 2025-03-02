@@ -6,7 +6,6 @@ A small search library.
 
 Primarily intended to be a learning tool to teach the fundamentals of search.
 
-
 Usage
 -----
 
@@ -76,11 +75,6 @@ import math
 import os
 import re
 import tempfile
-
-
-__author__ = 'Daniel Lindsley'
-__license__ = 'BSD'
-__version__ = (1, 0, 0)
 
 
 class Microsearch(object):
