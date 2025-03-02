@@ -5,12 +5,7 @@ microsearch
 
 A small search library.
 
-Primarily intended to be a learning tool to teach the fundamentals of search.
-
-Useful for embedding into Python apps where you don't want/need something
-as complex as Lucene.
-
-Part of my (upcoming) 2012 PyCon talk - https://us.pycon.org/2012/schedule/presentation/66/
+Primarily intended to be a learning tool to learn the fundamentals of search.
 
 
 Requirements
@@ -55,17 +50,10 @@ in Real Code(tm):
   * But there are no locks
   * So it's possible for writes to overlap between processes
 
-* Maybe thread-safe?
-
-  * Pretty much everything is on an instance
-  * But I haven't tested it extensively with threading
-
 * No support for deleting documents
 
   * If an existing document changes or gets deleted, stale data will be left
     in the index
-  * A workaround would be blowing away the index directory, moving the docs out
-    and reindexing them :/
 
 * Only n-grams are supported
 
@@ -98,22 +86,3 @@ In Python 3:
 
 Tests should be passing at all times under both Python 2.7 & Python 3.2.
 
-
-Contributions
-=============
-
-If you wish to contribute to improving ``microsearch``, the code you submit
-must:
-
-* Be your own work & BSD-licensed
-* Include a working fix/feature
-* Follow the existing style of the codebase
-* Include passing test coverage of the new code
-* If it's user-facing, must include documentation
-
-Other submissions are welcome, but won't get merged until all of these
-requirements are met.
-
-
-:author: Daniel Lindsley <daniel@toastdriven.com>
-:date: 2011/02/22
